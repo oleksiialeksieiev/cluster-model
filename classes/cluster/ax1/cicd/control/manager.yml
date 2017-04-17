@@ -1,0 +1,4 @@
+classes:
+  - system.docker.swarm.manager
+  - cluster.ax1.infra
+  - cluster.ax1.cicd.control
