@@ -1,0 +1,10 @@
+classes:
+- cluster.ax1.infra.config
+parameters:
+  _param:
+    linux_system_codename: xenial
+    reclass_data_revision: master
+  linux:
+    system:
+      name: salt-master
+      domain: axlab.local
