@@ -16,7 +16,7 @@ parameters:
     # infra service addresses
     infra_config_hostname: salt-master
     infra_config_address: 192.168.203.90
-    infra_config_deploy_address: 10.167.5.90
+    infra_config_deploy_address: 192.168.201.4
 
     cluster_domain: axlab.local
     cluster_name: ax1
@@ -25,9 +25,9 @@ parameters:
     infra_kvm_node01_address: 192.168.203.241
     infra_kvm_node02_address: 192.168.203.242
     infra_kvm_node03_address: 192.168.203.243
-    infra_kvm_node01_deploy_address: 10.167.5.241
-    infra_kvm_node02_deploy_address: 10.167.5.242
-    infra_kvm_node03_deploy_address: 10.167.5.243
+    infra_kvm_node01_deploy_address: 192.168.201.11
+    infra_kvm_node02_deploy_address: 192.168.201.12
+    infra_kvm_node03_deploy_address: 192.168.201.13
     infra_kvm_node01_hostname: kvm01
     infra_kvm_node02_hostname: kvm02
     infra_kvm_node03_hostname: kvm03

@@ -23,14 +23,14 @@ parameters:
     network:
       interface:
         eth1:
-          mtu: 9000
+          mtu: 8000
           enabled: true
           type: slave
           proto: manual
           name: ${_param:primary_first_nic}
           master: bond0
         eth2:
-          mtu: 9000
+          mtu: 8000
           enabled: true
           type: slave
           proto: manual
