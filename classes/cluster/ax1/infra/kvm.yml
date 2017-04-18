@@ -1,5 +1,4 @@
 classes:
-- system.linux.system.repo.mcp10
 - system.linux.system.repo.ubuntu
 - service.keepalived.cluster.single
 - system.glusterfs.server.cluster

@@ -6,5 +6,5 @@ parameters:
     reclass_data_revision: master
   linux:
     system:
-      name: salt-master
+      name: cfg01
       domain: axlab.local
