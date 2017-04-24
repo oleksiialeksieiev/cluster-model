@@ -33,6 +33,7 @@ parameters:
     infra_kvm_node03_hostname: kvm03
 
     control_network_netmask: 255.255.255.0
+    control_network_gateway: 192.168.203.1
     tenant_network_netmask: 255.255.255.0
     control_vlan: 10
     tenant_vlan: 20
@@ -40,7 +41,7 @@ parameters:
     dns_server01: 8.8.8.8
     dns_server02: 8.8.4.4
     deploy_network_netmask: 255.255.255.0
-    deploy_network_gateway: 192.168.203.1
+    deploy_network_gateway: 192.168.201.1
 
     linux_dhcp_interface:
       enabled: true
