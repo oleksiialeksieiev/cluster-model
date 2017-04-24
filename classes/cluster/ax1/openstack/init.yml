@@ -81,6 +81,7 @@ parameters:
     openstack_proxy_address: 192.168.203.80
     openstack_proxy_node01_address: 192.168.203.81
     openstack_proxy_node02_address: 192.168.203.82
+    openstack_proxy_node03_address: 192.168.203.83
     openstack_control_address: 192.168.203.10
     openstack_control_node01_address: 192.168.203.11
     openstack_control_node02_address: 192.168.203.12
@@ -114,6 +115,7 @@ parameters:
     openstack_proxy_hostname: prx
     openstack_proxy_node01_hostname: prx01
     openstack_proxy_node02_hostname: prx02
+    openstack_proxy_node03_hostname: prx03
     openstack_control_hostname: ctl
     openstack_control_node01_hostname: ctl01
     openstack_control_node02_hostname: ctl02
@@ -161,6 +163,11 @@ parameters:
           names:
           - ${_param:openstack_proxy_node02_hostname}
           - ${_param:openstack_proxy_node02_hostname}.${_param:cluster_domain}
+        prx03:
+          address: ${_param:openstack_proxy_node03_address}
+          names:
+          - ${_param:openstack_proxy_node03_hostname}
+          - ${_param:openstack_proxy_node03_hostname}.${_param:cluster_domain}
         ctl:
           address: ${_param:openstack_control_address}
           names:

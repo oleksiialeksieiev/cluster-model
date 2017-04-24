@@ -85,7 +85,9 @@ parameters:
         internal:
           node:
             prx02:
-              provider: ${_param:infra_compute_node03_address}.${_param:cluster_domain}
+              provider: kvm03.${_param:cluster_domain}
+              image: ${_param:salt_control_trusty_image}
+              size: openstack.proxy
             mdb01:
               image: ${_param:salt_control_xenial_image}
             mdb02:
