@@ -107,7 +107,7 @@ parameters:
     openstack_gateway_node03_tenant_address: 192.168.206.8
 
     # OpenStack Compute
-    openstack_compute_rack01_sigle_subnet: 192.168.203
+    openstack_compute_rack01_single_subnet: 192.168.203
     openstack_compute_rack01_tenant_subnet: 192.168.206
     openstack_compute_rack01_hostname: cmp
 
