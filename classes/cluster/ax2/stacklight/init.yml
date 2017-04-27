@@ -6,6 +6,7 @@ parameters:
     heka_aggregator_host: ${_param:stacklight_monitor_address}
     aggregator_port: 5565
     grafana_user: admin
+    grafana_password: gjT9M9YVMmo7Am9g
     cluster_elasticsearch_port: 9200
     cluster_kibana_port: 5601
     cluster_grafana_port: 3000
