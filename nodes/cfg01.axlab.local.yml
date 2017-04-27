@@ -1,5 +1,5 @@
 classes:
-- cluster.ax1.infra.config
+- cluster.ax2.infra.config
 parameters:
   _param:
     linux_system_codename: xenial
