@@ -1,6 +1,7 @@
 
 classes:
 - system.linux.system.single
+- cluster.ax2.infra.pub_keys
 - system.openssh.server.team.lab
 - system.openssh.server.team.tcpcloud
 - system.openssh.server.team.mcp_qa

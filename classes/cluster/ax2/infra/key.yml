@@ -1,0 +1,51 @@
+applications:
+- openssh
+parameters:
+  _param:
+    cluster_private_key: |
+      -----BEGIN RSA PRIVATE KEY-----
+      MIIEowIBAAKCAQEAsv1DbsCLCdNTF58NO2ErknHsp+ya54RDjc26jNbqnOyhhMhb
+      XAcVImy2PVq6ZkiA2ijdhJ/J6M5bQFIWNtTY94syXSzupyysv2WU1zj9Gju+hJza
+      UvFU0cD5m2zg9yfEwtVIXMd/Nb1ownRekoFNwO6XFuDRWL/B3xmE93fUlJFhuC95
+      BhLwYAYCfclb1VbIg0thl6kpFsQtCE86mhPrUWlYV3Y7XOXCFjF3ixD0NcEyK8jb
+      oJGxkTm8XMhn8i5hDMfg2QUZJmry5CdcaZPSwKbcGldEX11TGnl0DD93dqr9MJ2V
+      9v+h4E2gz2p2NcKSHq9S4DNeHdi/5jPGD64IXQIDAQABAoIBAQCUwMsEBl0HI2vR
+      G8xhZxZRNQEbZhYvBssl1K6PUiXVmQt7URAsYW59F6A1SWvUibkclg3TpQCmzKkl
+      wZLYqvhOco6+xRLqOMSwpHmYjLI81R43FCyV9h8p25kWRNyKS7DIw3zKLrpYLTwd
+      L51RYMj/6MoEp38UpPk4svrAuAQiG3UnOynU/hOxu4Zim/zr1eR3GZbUhI/tMGa5
+      RhESzZRYRVhWCPhRuhqFb3tAgBgfCSDvZYoc8RiBEA33EC8ICY0I9k1jJk+LEnM6
+      +xDIoqR/J9TjzrA3nyDL5h/zoMhz+dWqk4yS0Owiakj8jyB+zp27dMVJVp+t6Rx3
+      y+x8quA5AoGBANj+ApiwOz14aj853iAZxfaLnIB7ux0p05CJ2v7Qn/bL6HlT6wUO
+      ZiRDdvpYdc7uU4/+7MFJVm8UMhTRR//1p+0ef4OBaoJElstP8Qx8oW2rHcq0ZyLJ
+      4p8NnQ2r0VwlZWSEp+jNghgA7BHc12WcYcHFYh26zwAV/f9s14rt6nnXAoGBANMq
+      W5KCToQjihbrIXdZwEpkD0L0+kY8tbWE7VsFLgU+1TyM4uWjjQxm2ZUL5f9tiAx0
+      BxVppoei/s3MlF9DCNl/0BEKxEk/WlpL7AgbtPob5d471fXhUxHGwhRg5Ywb24/e
+      /Q9IBAZpYsOyyuEUo87E7IfjNF1B4ROWeKpt61DrAoGAe6fNDPwo1i/fxCYS+hIV
+      6RjIV8Oq7sSeJtkYbmuvLPIoibOT067P8Ext6d4tTH4uKnnoq4FCe0xz+b8Fm8x/
+      JLZjjipa6t9xW20z/ZysVZXVBWXm/EE2HtOgM2E9jphU/oJGOXmbcFheLxO9v87t
+      OoJkFnMVcYQW2c9JyYcpPsMCgYAwHLKIixAAo2hPGHujidt6F5oyk0aCwkpUdVjv
+      KBr4Lvy+swrvb3gvny9r+i4JKJea3sTOaCf9N3H+yeH0Yn2dsLVjbKSUW87mS+4X
+      Wti9M6YIIHH7d79JiZOmuP0UEzTPbusRlEL2gwRxukbnSaCY9908iNPhe6UgpWQQ
+      0MKQyQKBgDbzDsKls6dErmrqC7OnChZ8J/pI/YjS8wtxlkV+IL7BfI0T6hBUcqXU
+      Tn9cz9Bkb99DuzwZI/wndn4FQi5aSE3TvwKSxzrvRquwRMBDmt/KhfgENvneVWcX
+      hsJ5te/k+RF6Vk++V2jSiQUc3AZJGLcTRoH6W4IZ6zFQZ4sDGdmT
+      -----END RSA PRIVATE KEY-----
+  openssh:
+    client:
+      enabled: true
+      user:
+        root:
+          enabled: true
+          user: ${linux:system:user:root}
+          private_key: ${private_keys:lab}
+          known_hosts:
+          - ${known_hosts:git}
+  known_hosts:
+    192.168.201.9:
+      name: git
+      type: ecdsa
+      fingerprint: f4:c1:0a:8d:92:2c:5f:18:69:41:f5:32:4e:51:56:51
+  private_keys:
+    lab:
+      type: rsa
+      key: ${_param:cluster_private_key}
