@@ -63,6 +63,11 @@ parameters:
         - ${_param:dns_server02}
     tenant_network_gateway: 192.168.203.1
 
+  salt:
+    minion:
+      trusted_ca_minions:
+        - cfg01
+
 
   linux:
     network:

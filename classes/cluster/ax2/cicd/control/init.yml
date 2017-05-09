@@ -6,6 +6,7 @@ classes:
   - system.glusterfs.client.volume.gerrit
   - system.glusterfs.client.volume.jenkins
   - system.glusterfs.client.volume.registry
+  - system.glusterfs.client.volume.salt_pki
   - system.glusterfs.client.volume.openldap
  #- system.glusterfs.client.volume.salt
   # Docker

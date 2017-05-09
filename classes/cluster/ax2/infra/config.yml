@@ -1,6 +1,9 @@
 classes:
 - system.linux.system.repo.mcp.salt
 - system.linux.system.repo.ubuntu
+- system.linux.system.repo.glusterfs
+- system.glusterfs.client.cluster
+- system.glusterfs.client.volume.salt_pki
 - cluster.ax2.infra.key
 - system.salt.master.pkg
 - system.salt.minion.ca.salt_master
