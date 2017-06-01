@@ -1,0 +1,184 @@
+default_context:
+  cicd_control_node01_address: 192.168.203.91
+  cicd_control_node01_hostname: cid01
+  cicd_control_node02_address: 192.168.203.92
+  cicd_control_node02_hostname: cid02
+  cicd_control_node03_address: 192.168.203.93
+  cicd_control_node03_hostname: cid03
+  cicd_control_vip_address: 192.168.203.90
+  cicd_control_vip_hostname: cid
+  cicd_enabled: 'True'
+  cicd_private_key: |-
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEpQIBAAKCAQEA3Z6vXbUcQQfjd69WRgWTbb5p0K6hzqV8FH0u3XH+PfgbIbZR
+    Gp+iAEgR5W5wENXbv8cyJ9lfwqH6Pg3XPdadyheuimxZeB9fTGKoKcZbxRsq/MXG
+    bHUijGfh10qq9YsMUHGOuK36I9sF0+lcZLsUKWISGjX8TsIECuDpkPHfzB88JF+g
+    UeDcDWqJdRoRaRXxNhbeS2ZKEF2nG1sIFzjo+Oa1/LkDjVcw/vN4aM3xi0wfMijP
+    MOrp3uB+IIt9JbGDcPUbNTBiwShp9/IWqPI+I/cJiv/CguuNMB9wlXroFCjlAeK7
+    alsP9TY0J0607YWifVLFdg9fLmdOfMxIOjnI0wIDAQABAoIBAQDcl4P0oT5DWKfI
+    zOTyA8DQfrTyu7BhcYTFHCmW0E2Bv0C6WK/38SceYp41oay4hTYbeRnqYksX/4SH
+    Wd2CNuqOau4X6GtRzuBbtuOt2TwlQLqUKgQslpdR7GD2m+L5T3Ntaurl1n5iTDNL
+    0D9gIHqcCnr8TfobJrFBZsf1t1vM3vwSIBhTSoYgJr/F2eFq7LITEX5h6uLcrT3D
+    5dtuw5ZISzg1xKbJ0FPT7DPbkAiZIy3lE7qnH+5g3kIONmWrhdZXuMksdmxPR7s1
+    B0zVbRQHmQjSNCvGs/qzRxTFJ5A87V4Wo26Ct2xYN0qu3mFKjIlSm5Y72ECDAAev
+    Xi9MhvvhAoGBAPHCGrgi/5ki40bvbCGfCIrkdqVVIisuO0rFFniZ91fH/xSSZwDA
+    OZ/v4wF47vrWeKjqv178rO3Wy1uB/zO4gcBhGmjZwTrMF1Ykeyo8gzPYmmNePsso
+    pcmCrYR0NoVcHtchPDYXIsuADM3svjAtDbrrJXC1NZ9GfCXEU0eIixgDAoGBAOqs
+    4QyKhuKHxX9C+FORWCrQbr3yQRqIbBMkfwdcg8uIE02aIb0cKgMl2Wb8ObHvQdfk
+    sPgjR1KUuPWYygSb0HFgnSee+oEd5Ftobbqt1If2bQ4sm81iugPeKc25CrEKP8Bq
+    9rUVmWZcpsCye2OVR/X0DkUl8uxYQ5azPvJP8rrxAoGADdoMQ96lfHW2Rfsz291L
+    1QFwFtsA4S598TPHrNNNi7cG03vr8OwSoSpSfGQcdTzSnwMMQfoCQoJbFnwlTiZV
+    MNufcsB/RMoq0CG4+NuMvOy9M9JTkLpcfWZCYONzuEJl9feOhp7evIAyu53D6+i4
+    76vHcmS/lMeqF1PfXariJVcCgYEA1A1BEgb+mSVcFYGbSE/2XkGXP7XulB4fojCB
+    RFKZmMktwBp9UBdp8ww5ZTCWpazvTzkLnDysjvdqJipYqU9uS3SkrQ+fhhpPpTU4
+    qc23VOAcbQlsA2upcCNInOcOvSjosGM26CxLP86Ks2bTzgkvTBSq7Fq9JkkfUcZI
+    I8aQK9ECgYEA6Du2nfq9ucOUNK/FzacxXczR0ynFvYcyfS/PpRBOMAwwEDABEtZe
+    mjkmJaVXl6TV574BjrvKlP92kWyqbWJNo0jqugAR9yE2D3KkO3R8GRocqe1Sn34R
+    xcsN8ZKpV4pI3ycUk7W29kmpt7RwFc4CZO0au0+DJybh6MjqFzKMiOw=
+    -----END RSA PRIVATE KEY-----
+  cicd_public_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDdnq9dtRxBB+N3r1ZGBZNtvmnQrqHOpXwUfS7dcf49+BshtlEan6IASBHlbnAQ1du/xzIn2V/Cofo+Ddc91p3KF66KbFl4H19MYqgpxlvFGyr8xcZsdSKMZ+HXSqr1iwxQcY64rfoj2wXT6VxkuxQpYhIaNfxOwgQK4OmQ8d/MHzwkX6BR4NwNaol1GhFpFfE2Ft5LZkoQXacbWwgXOOj45rX8uQONVzD+83hozfGLTB8yKM8w6une4H4gi30lsYNw9Rs1MGLBKGn38hao8j4j9wmK/8KC640wH3CVeugUKOUB4rtqWw/1NjQnTrTthaJ9UsV2D18uZ058zEg6OcjT
+  cluster_domain: axlab.local
+  cluster_name: ax3
+  compute_bond_mode: active-backup
+  compute_primary_first_nic: ens5
+  compute_primary_second_nic: ens6
+  control_network_netmask: 255.255.255.0
+  control_network_subnet: 192.168.203.0/24
+  control_vlan: '10'
+  cookiecutter_template_branch: master
+  cookiecutter_template_url: git@github.com:Mirantis/mk2x-cookiecutter-reclass-model.git
+  deploy_network_gateway: 192.168.201.1
+  deploy_network_netmask: 255.255.255.0
+  deploy_network_subnet: 192.168.201.0/24
+  deployment_type: physical
+  dns_server01: 8.8.8.8
+  dns_server02: 8.8.4.4
+  email_address: aalekseev@mirantis.com
+  infra_bond_mode: active-backup
+  infra_deploy_nic: ens4
+  infra_kvm01_control_address: 192.168.203.241
+  infra_kvm01_deploy_address: 192.168.201.241
+  infra_kvm01_hostname: kvm01
+  infra_kvm02_control_address: 192.168.203.242
+  infra_kvm02_deploy_address: 192.168.201.242
+  infra_kvm02_hostname: kvm02
+  infra_kvm03_control_address: 192.168.203.243
+  infra_kvm03_deploy_address: 192.168.201.243
+  infra_kvm03_hostname: kvm03
+  infra_kvm_vip_address: 192.168.203.240
+  infra_primary_first_nic: ens5
+  infra_primary_second_nic: ens6
+  kubernetes_enabled: 'False'
+  local_repositories: 'False'
+  opencontrail_analytics_address: 192.168.203.30
+  opencontrail_analytics_hostname: nal
+  opencontrail_analytics_node01_address: 192.168.203.31
+  opencontrail_analytics_node01_hostname: nal01
+  opencontrail_analytics_node02_address: 192.168.203.32
+  opencontrail_analytics_node02_hostname: nal02
+  opencontrail_analytics_node03_address: 192.168.203.33
+  opencontrail_analytics_node03_hostname: nal03
+  opencontrail_compute_iface_mask: '24'
+  opencontrail_control_address: 192.168.203.20
+  opencontrail_control_hostname: ntw
+  opencontrail_control_node01_address: 192.168.203.21
+  opencontrail_control_node01_hostname: ntw01
+  opencontrail_control_node02_address: 192.168.203.22
+  opencontrail_control_node02_hostname: ntw02
+  opencontrail_control_node03_address: 192.168.203.23
+  opencontrail_control_node03_hostname: ntw03
+  opencontrail_enabled: 'True'
+  opencontrail_router01_address: 192.168.203.100
+  opencontrail_router01_hostname: rtr01
+  opencontrail_router02_address: 192.168.203.101
+  opencontrail_router02_hostname: rtr02
+  openldap_dn: dc=${_param:cluster_name},dc=local
+  openldap_enabled: 'True'
+  openldap_organisation: ${_param:cluster_name}
+  openstack_compute_count: '100'
+  openstack_compute_rack01_hostname: cmp
+  openstack_compute_rack01_single_subnet: 192.168.0.203
+  openstack_compute_rack01_tenant_subnet: 192.168.206
+  openstack_control_address: 192.168.203.10
+  openstack_control_hostname: ctl
+  openstack_control_node01_address: 192.168.203.11
+  openstack_control_node01_hostname: ctl01
+  openstack_control_node02_address: 192.168.203.12
+  openstack_control_node02_hostname: ctl02
+  openstack_control_node03_address: 192.168.203.13
+  openstack_control_node03_hostname: ctl03
+  openstack_database_address: 192.168.203.50
+  openstack_database_hostname: dbs
+  openstack_database_node01_address: 192.168.203.51
+  openstack_database_node01_hostname: dbs01
+  openstack_database_node02_address: 192.168.203.52
+  openstack_database_node02_hostname: dbs02
+  openstack_database_node03_address: 192.168.203.53
+  openstack_database_node03_hostname: dbs03
+  openstack_enabled: 'True'
+  openstack_message_queue_address: 192.168.203.40
+  openstack_message_queue_hostname: msg
+  openstack_message_queue_node01_address: 192.168.203.41
+  openstack_message_queue_node01_hostname: msg01
+  openstack_message_queue_node02_address: 192.168.203.42
+  openstack_message_queue_node02_hostname: msg02
+  openstack_message_queue_node03_address: 192.168.203.43
+  openstack_message_queue_node03_hostname: msg03
+  openstack_network_engine: opencontrail
+  openstack_nfv_dpdk_enabled: 'False'
+  openstack_nfv_sriov_enabled: 'False'
+  openstack_nova_compute_nfv_req_enabled: 'False'
+  openstack_proxy_address: 192.168.203.80
+  openstack_proxy_hostname: prx
+  openstack_proxy_node01_address: 192.168.203.81
+  openstack_proxy_node01_hostname: prx01
+  openstack_proxy_node02_address: 192.168.203.82
+  openstack_proxy_node02_hostname: prx02
+  openstack_telemetry_address: 192.168.203.75
+  openstack_telemetry_hostname: mdb
+  openstack_telemetry_node01_address: 192.168.203.76
+  openstack_telemetry_node01_hostname: mdb01
+  openstack_telemetry_node02_address: 192.168.203.77
+  openstack_telemetry_node02_hostname: mdb02
+  openstack_telemetry_node03_address: 192.168.203.78
+  openstack_telemetry_node03_hostname: mdb03
+  openstack_version: mitaka
+  platform: openstack_enabled
+  public_host: ${_param:openstack_proxy_address}
+  publication_method: email
+  reclass_repository: https://github.com/oleksiialeksieiev/cluster-model.git
+  salt_api_password: pD0HFDHmUCeNL9R2i2kFuFH4JREfvKJJ
+  salt_api_password_hash: $6$jegKLtkB$xQ0sCTdg1Yz0uwfXm0KH4ML2nTyx2zallVyHYKwBechSwu.4CFcWDJbniDizMX17KGBpPwA5chNuW6kd9mSlf.
+  salt_master_address: 192.168.203.90
+  salt_master_hostname: cfg01
+  salt_master_management_address: 192.168.201.90
+  stacklight_enabled: 'True'
+  stacklight_log_address: 192.168.203.60
+  stacklight_log_hostname: log
+  stacklight_log_node01_address: 192.168.203.61
+  stacklight_log_node01_hostname: log01
+  stacklight_log_node02_address: 192.168.203.62
+  stacklight_log_node02_hostname: log02
+  stacklight_log_node03_address: 192.168.203.63
+  stacklight_log_node03_hostname: log03
+  stacklight_monitor_address: 192.168.203.70
+  stacklight_monitor_hostname: mon
+  stacklight_monitor_node01_address: 192.168.203.71
+  stacklight_monitor_node01_hostname: mon01
+  stacklight_monitor_node02_address: 192.168.203.72
+  stacklight_monitor_node02_hostname: mon02
+  stacklight_monitor_node03_address: 192.168.203.73
+  stacklight_monitor_node03_hostname: mon03
+  stacklight_telemetry_address: 192.168.203.85
+  stacklight_telemetry_hostname: mtr
+  stacklight_telemetry_node01_address: 192.168.203.86
+  stacklight_telemetry_node01_hostname: mtr01
+  stacklight_telemetry_node02_address: 192.168.203.87
+  stacklight_telemetry_node02_hostname: mtr02
+  stacklight_telemetry_node03_address: 192.168.203.88
+  stacklight_telemetry_node03_hostname: mtr03
+  tenant_network_gateway: 192.168.201.1
+  tenant_network_netmask: 255.255.255.0
+  tenant_network_subnet: 192.168.206.0/24
+  tenant_vlan: '20'
+
