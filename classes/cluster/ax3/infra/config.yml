@@ -3,8 +3,7 @@ classes:
 - system.linux.system.repo.mcp.extra
 - system.linux.system.repo.ubuntu
 - system.linux.system.repo.glusterfs
-- system.linux.system.repo.glusterfs
-- system.openssh.client.lab
+- cluster.ax3.infra.key
 - system.glusterfs.client.cluster
 - system.glusterfs.client.volume.salt_pki
 - system.salt.master.pkg

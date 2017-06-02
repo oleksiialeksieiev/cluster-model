@@ -1,11 +1,7 @@
 
 classes:
 - system.linux.system.single
-- system.openssh.server.team.lab
-- system.openssh.server.team.tcpcloud
-- system.openssh.server.team.mcp_qa
-- system.openssh.server.team.l1_support
-- system.openssh.server.team.l2_support
+- cluster.ax3.infra.pub_keys
 - cluster.ax3.openstack
 - cluster.ax3.opencontrail
 - cluster.ax3.stacklight
@@ -61,7 +57,7 @@ parameters:
       name_servers:
         - ${_param:dns_server01}
         - ${_param:dns_server02}
-    tenant_network_gateway: 192.168.201.1
+    tenant_network_gateway: 192.168.206.1
 
   salt:
     minion:

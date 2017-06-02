@@ -1,0 +1,25 @@
+parameters:
+  _param:
+    # This is the public key associated to the default private key setup in
+    # openssh.client.lab
+    cluster_public_key: >-
+      ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCy/UNuwIsJ01MXnw07YSuSceyn7JrnhEONzbqM1uqc7KGEyFtcBxUibLY9WrpmSIDaKN2En8nozltAUhY21Nj3izJdLO6nLKy/ZZTXOP0aO76EnNpS8VTRwPmbbOD3J8TC1Uhcx381vWjCdF6SgU3A7pcW4NFYv8HfGYT3d9SUkWG4L3kGEvBgBgJ9yVvVVsiDS2GXqSkWxC0ITzqaE+tRaVhXdjtc5cIWMXeLEPQ1wTIryNugkbGRObxcyGfyLmEMx+DZBRkmavLkJ1xpk9LAptwaV0RfXVMaeXQMP3d2qv0wnZX2/6HgTaDPanY1wpIer1LgM14d2L/mM8YPrghd root@salt-master.axlab.local
+  linux:
+    system:
+      user:
+        root:
+          enabled: true
+          name: root
+          home: /root
+  openssh:
+    server:
+      permit_root_login: true
+      user:
+        root:
+          enabled: true
+          user: ${linux:system:user:root}
+          public_keys:
+          - ${public_keys:root}
+  public_keys:
+    root:
+      key: ${_param:cluster_public_key}
