@@ -87,7 +87,7 @@ parameters:
     openstack_telemetry_node03_address: 192.168.203.78
 
     # OpenStack Compute
-    openstack_compute_rack01_single_subnet: 192.168.0.203
+    openstack_compute_rack01_single_subnet: 192.168.203
     openstack_compute_rack01_tenant_subnet: 192.168.206
     openstack_compute_rack01_hostname: cmp
 
