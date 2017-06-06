@@ -39,10 +39,10 @@ parameters:
           user: ${linux:system:user:root}
           private_key: ${private_keys:lab}
           known_hosts:
-          - ${known_hosts:192.168.201.9}
+          - ${known_hosts:192.168.201.90}
   known_hosts:
-    192.168.201.9:
-      name: 192.168.201.9
+    192.168.201.90:
+      name: 192.168.201.90
       type: ecdsa
       fingerprint: f4:c1:0a:8d:92:2c:5f:18:69:41:f5:32:4e:51:56:51
   private_keys:
