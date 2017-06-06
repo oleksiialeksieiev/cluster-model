@@ -44,7 +44,7 @@ parameters:
     192.168.201.90:
       name: 192.168.201.90
       type: ecdsa
-      fingerprint: f4:c1:0a:8d:92:2c:5f:18:69:41:f5:32:4e:51:56:51
+      fingerprint: ociCNuLDLc40d3e/ZHhTj9udJb6ny1zbGngjFsDJBXQ
   private_keys:
     lab:
       type: rsa
