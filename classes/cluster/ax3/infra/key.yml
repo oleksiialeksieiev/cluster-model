@@ -40,11 +40,11 @@ parameters:
           private_key: ${private_keys:lab}
           known_hosts:
           - ${known_hosts:192.168.201.90}
-  known_hosts:
-    192.168.201.90:
-      name: 192.168.201.90
-      type: ecdsa
-      fingerprint: 8b:95:e0:0b:af:11:35:53:e0:1d:24:94:a4:c8:79:bd
+#  known_hosts:
+#    192.168.201.90:
+#      name: 192.168.201.90
+#      type: ecdsa
+#      fingerprint: 8b:95:e0:0b:af:11:35:53:e0:1d:24:94:a4:c8:79:bd
   private_keys:
     lab:
       type: rsa
