@@ -150,7 +150,7 @@ parameters:
           type: slave
           proto: manual
           name: ${_param:primary_second_nic}
-          master: bond0
+          master: bond1
         br_mgm:
           enabled: true
           proto: static
