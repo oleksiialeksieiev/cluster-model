@@ -28,6 +28,12 @@ parameters:
   linux:
     network:
       interface:
+        eth0:
+          mtu: 1450
+          enabled: true
+          type: eth
+          proto: dhcp
+          name: ens3
         eth1:
           mtu: 9000
           enabled: true
@@ -49,27 +55,17 @@ parameters:
           type: bond
           use_interfaces:
           - ${_param:primary_first_nic}
-          - ${_param:primary_second_nic}
-          slaves: ${_param:primary_first_nic} ${_param:primary_second_nic}
+          slaves: ${_param:primary_first_nic}
           mode: active-backup
-        bond0.1:
+        bond1:
           mtu: 9000
-          name: bond0.${_param:control_vlan}
-          enabled: true
-          proto: static
-          type: vlan
-          use_interfaces:
-          - bond0
-          address: ${_param:single_address}
-          netmask: ${_param:control_network_netmask}
-        bond0.2:
-          mtu: 9000
-          name: bond0.${_param:tenant_vlan}
           enabled: true
           proto: manual
-          type: vlan
+          type: bond
           use_interfaces:
-          - bond0
+          - ${_param:primary_second_nic}
+          slaves: ${_param:primary_second_nic}
+          mode: active-backup
         vhost0:
           enabled: true
           type: eth
@@ -80,7 +76,7 @@ parameters:
           pre_up_cmds:
           - /usr/lib/contrail/if-vhost0
           use_interfaces:
-          - bond0.${_param:tenant_vlan}
+          - bond1
           name_servers:
           - ${_param:dns_server01}
           - ${_param:dns_server02}

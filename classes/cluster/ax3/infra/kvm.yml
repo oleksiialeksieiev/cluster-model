@@ -132,15 +132,20 @@ parameters:
         eth0:
           enabled: true
           type: eth
+          proto: dhcp
+          name: ens3
+        eth1:
+          enabled: true
+          type: eth
           proto: manual
           name: ${_param:deploy_nic}
-        eth1:
+        eth2:
           enabled: true
           type: slave
           proto: manual
           name: ${_param:primary_first_nic}
           master: bond0
-        eth2:
+        eth3:
           enabled: true
           type: slave
           proto: manual
@@ -164,16 +169,16 @@ parameters:
           type: bond
           use_interfaces:
           - ${_param:primary_first_nic}
-          - ${_param:primary_second_nic}
-          slaves: ${_param:primary_first_nic} ${_param:primary_second_nic}
+          slaves: ${_param:primary_first_nic}
           mode: active-backup
-        bond0.1:
-          name: bond0.${_param:control_vlan}
+        bond1:
           enabled: true
           proto: manual
-          type: vlan
+          type: bond
           use_interfaces:
-          - bond0
+          - ${_param:primary_second_nic}
+          slaves: ${_param:primary_second_nic}
+          mode: active-backup
         br_ctl:
           enabled: true
           type: bridge
@@ -181,7 +186,7 @@ parameters:
           address: ${_param:single_address}
           netmask: ${_param:control_network_netmask}
           use_interfaces:
-          - bond0.${_param:control_vlan}
+          - bond1
   #   system:
   #     package:
   #       linux-image-4.8.0-39-generic:
