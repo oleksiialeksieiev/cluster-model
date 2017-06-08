@@ -186,7 +186,7 @@ parameters:
           address: ${_param:single_address}
           netmask: ${_param:control_network_netmask}
           use_interfaces:
-          - bond1
+          - bond0
   #   system:
   #     package:
   #       linux-image-4.8.0-39-generic:
